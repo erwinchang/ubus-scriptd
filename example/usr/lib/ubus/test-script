@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ "$1" == ".methods" ]; then
+    echo "{\"test\":{\"id\":\"int\",\"msg\":\"string\"}}";
+fi
+if [ "$1" == "test" ]; then
+    echo "$2"
+#   echo "{\"foo\":\"bar\"}"
+fi

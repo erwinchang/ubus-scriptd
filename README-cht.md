@@ -17,8 +17,21 @@ ubus-scriptd有下例程序:
  * 此時程式需要回應ubus mehtod的json檔案，並將此method加入obj 
  * 檔有人通過ubus call會將參數帶入執行檔 
  * ex. /usr/lib/ubus cmd-json
-   
-* 其它參考說明 
+
+# Example
+
+* ubus list -v
+```
+'/test-script' @9b64e84d
+        "test":{"id":"Integer","msg":"String"}
+'broken' @9db4f7a9
+        "hello1":{}
+'test' @58c4aefa
+        "hello":{"id":"Integer","msg":"String"}
+        "hello1":{"id":"Integer","msg":"String"}
+```
+
+# 其它參考說明 
    [Writing a ubus script][1]
    
 [1]:http://mkschreder.github.io/juci/manual/creating-pages.html
